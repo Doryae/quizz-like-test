@@ -1,0 +1,117 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "Russo One", Arial;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.quizz-container {
+    width:70%;
+    margin: auto;
+    max-width: 825px;
+}
+
+h4 {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+span {
+    text-decoration: underline;
+}
+
+input[type="radio"] {
+    transform: scale(1.8);
+    margin: 10px;
+}
+
+label {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.question-block div {
+    display: flex;
+    align-items: baseline;
+}
+
+.question-block {
+    padding: 15px 25px 25px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+form button {
+    border: 1px solid #333;
+    outline: none;
+    display: block;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out forward;
+}
+
+form button:hover {
+    background-color: lightblue;
+}
+
+form button:active {
+    transform: translate(1px, 3px)
+}
+
+.resultats {
+    padding: 25px;
+    margin: 10px 0px 70px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.resultats h2 {
+    text-align: center;
+}
+
+.aide {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.note {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.echec {
+    animation: echec 0.5s ease-in-out;
+}
+
+@keyframes echec {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(8px);
+    }
+    66% {
+        transform: translateX(-8px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
