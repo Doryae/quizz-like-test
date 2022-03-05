@@ -96,7 +96,7 @@ function afficherResultats(tabCheck) {
             texteResultat.innerHTML = " 1 / 10";
             break;
         case 10:
-            titreResultat.innerText = `${emojis[5]} 0 pointé, c'est mal barré ! ${emojis[5]}`
+            titreResultat.innerText = `${emojis[4]} 0 pointé, c'est mal barré ! ${emojis[4]}`
             aideResultat.innerText = 'As-tu déjà lancé un jeu Pokémon ?';
             texteResultat.innerHTML = " 0 / 10";
             break;
